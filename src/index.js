@@ -1,5 +1,5 @@
-const express = require("express");
-const { PORT } = require("./utils/constants");
+import express from "express";
+import { PORT } from "./utils/constants.js";
 
 const app = express();
 
