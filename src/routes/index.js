@@ -1,6 +1,7 @@
 import { Router } from "express";
 import registerRouter from "./auth/register.router.js";
 import loginRouter from "./auth/login.router.js";
+import logoutRouter from "./auth/logout.router.js";
 
 const router = Router();
 
@@ -8,6 +9,7 @@ const router = Router();
 
 router.use("/register", registerRouter);
 router.use("/login", loginRouter);
+router.use("/logout", logoutRouter);
 
 // API routes
 
