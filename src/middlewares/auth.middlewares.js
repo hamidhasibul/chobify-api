@@ -19,8 +19,6 @@ export const verifyJWT = (req, res, next) => {
     if (error) {
       return res.status(403).json({ status: "error", message: "forbidden" });
     }
-
-    console.log(decoded);
     req.user = decoded.userId;
     next();
   });
