@@ -6,6 +6,7 @@ import logoutRouter from "./auth/logout.router.js";
 
 import categoryRouter from "./api/category.router.js";
 import productSizesRouter from "./api/product-size.router.js";
+import productRouter from "./api/products.router.js";
 
 const router = Router();
 
@@ -19,5 +20,6 @@ router.use("/logout", logoutRouter);
 
 router.use("/api/v1/categories", categoryRouter);
 router.use("/api/v1/product-sizes", productSizesRouter);
+router.use("/api/v1/products", productRouter);
 
 export default router;
