@@ -19,7 +19,7 @@ router
   .post(verifyJWT, upload.single("image"), addProduct);
 
 router
-  .route("/productId")
+  .route("/:productId")
   .get(getProduct)
   .put(verifyJWT, updateProduct)
   .delete(verifyJWT, deleteProduct);
